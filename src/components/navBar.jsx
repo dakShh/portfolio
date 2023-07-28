@@ -5,41 +5,49 @@ import clsx from "clsx";
 
 const NavBar = () => {
   return (
-    <div className={clsx("px-8 py-14", "absolute", "bg-transparent", "h-screen")}>
+    <div
+      className={clsx("px-8 py-14", "absolute", "bg-black/40", "backdrop-blur-[2px]", "h-screen")}
+    >
       <nav className={clsx("text-white ", "flex flex-col items-center ", "w-full h-full")}>
         {/* <div className="flex flex-col text-center">
           <div className="font-bold text-3xl">Daksh</div>
         </div> */}
 
         <ul className={clsx("flex flex-col gap-y-8", "")} id="nav-ul">
-          <li>
+          <li data-aos="fade-right" data-aos-delay="200">
             <a
-              className={clsx("text-black font-bold text-2xl", "rotate-180")}
+              className={clsx(" font-bold text-2xl text-white/25", "rotate-180")}
               style={{ writingMode: "tb" }}
             >
               Home
             </a>
           </li>
-          <li>
+          <li data-aos="fade-right" data-aos-delay="400">
             <a className={clsx("", "rotate-180")} style={{ writingMode: "tb" }}>
               Project
             </a>
           </li>
-          <li>
+          <li data-aos="fade-right" data-aos-delay="500">
             <a className={clsx("", "rotate-180")} style={{ writingMode: "tb" }}>
               About
             </a>
           </li>
-          <li>
+          <li data-aos="fade-right" data-aos-delay="600">
             <a className={clsx("", "rotate-180")} style={{ writingMode: "tb" }}>
               Contact
             </a>
           </li>
         </ul>
-        <div className="mt-auto ">
-          <div className="flex gap-x-2 items-center cursor-pointer ">
-            <i className="fa-solid fa-file-arrow-down text-xl text-purple-300"></i>
-            <span className="text-2xl">Resume</span>
+        <div className="mt-auto cursor-pointer ">
+          <div className="flex gap-x-2 items-center ">
+            <i
+              data-aos="fade-up"
+              data-aos-delay="600"
+              className="fa-solid fa-file-arrow-down text-xl text-purple-300"
+            ></i>
+            <span data-aos="fade-up" data-aos-delay="600" className="text-2xl">
+              Resume
+            </span>
           </div>
         </div>
       </nav>

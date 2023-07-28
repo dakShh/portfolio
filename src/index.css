@@ -32,6 +32,13 @@
   background: linear-gradient(76.8deg, rgb(121, 45, 129) 3.6%, rgb(36, 31, 98) 90.4%);
 }
 
+canvas {
+  display: block;
+  background: rgba(0, 0, 0, 0.45);
+  position: fixed;
+  z-index: -1;
+}
+
 #nav-ul li a {
   cursor: pointer;
   /* font-weight: 100; */
