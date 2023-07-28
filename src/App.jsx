@@ -8,6 +8,7 @@ import Socials from "./components/social_media/socials";
 // ** Animate on scroll
 import Aos from "aos";
 import "aos/dist/aos.css";
+import About from "./components/about";
 
 function App() {
   Aos.init({
@@ -20,6 +21,7 @@ function App() {
       <NavBar />
       <Socials />
       <Hero />
+      <About />
     </div>
   );
 }

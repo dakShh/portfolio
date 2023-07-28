@@ -5,9 +5,7 @@ import clsx from "clsx";
 
 const NavBar = () => {
   return (
-    <div
-      className={clsx("px-8 py-14", "absolute", "bg-black/40", "backdrop-blur-[2px]", "h-screen")}
-    >
+    <div className={clsx("px-8 py-14", "fixed", "bg-black/40", "backdrop-blur-[2px]", "h-screen")}>
       <nav className={clsx("text-white ", "flex flex-col items-center ", "w-full h-full")}>
         {/* <div className="flex flex-col text-center">
           <div className="font-bold text-3xl">Daksh</div>
