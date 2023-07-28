@@ -7,14 +7,14 @@ const About = () => {
     <div className="relative min-h-screen  text-white">
       <div className="flex flex-col items-center mb-32">
         <div
-          data-aos="fade-left"
+          data-aos="zoom-in-up"
           data-aos-delay="300"
           className={clsx("text-5xl font-extrabold", "mb-4", "underline underline-offset-4")}
         >
           Summary
         </div>
         <p
-          data-aos="fade-left"
+          data-aos="zoom-in-up"
           data-aos-delay="400"
           className={clsx("max-w-2xl", "text-lg text-center")}
         >
@@ -24,7 +24,19 @@ const About = () => {
         </p>
       </div>
 
-      <div data-aos="zoom-in" data-aos-delay="600" className="my-10">
+      <div data-aos="zoom-in" data-aos-delay="400" className="my-10">
+        <div
+          data-aos="zoom-in-up"
+          data-aos-delay="600"
+          className={clsx(
+            "text-5xl font-extrabold",
+            "text-center",
+            "underline underline-offset-4",
+            "mb-10"
+          )}
+        >
+          Education & Experience
+        </div>
         <VerticalTimeline />
       </div>
     </div>
