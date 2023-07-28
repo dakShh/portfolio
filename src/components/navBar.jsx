@@ -16,34 +16,34 @@ const NavBar = () => {
         <ul className={clsx("flex flex-col gap-y-8", "")} id="nav-ul">
           <li data-aos="fade-right" data-aos-delay="200">
             <a
-              className={clsx(" font-bold text-2xl text-white/25", "rotate-180")}
+              className={clsx(" font-bold text-2xl text-white", "rotate-180")}
               style={{ writingMode: "tb" }}
             >
               Home
             </a>
           </li>
           <li data-aos="fade-right" data-aos-delay="400">
-            <a className={clsx("", "rotate-180")} style={{ writingMode: "tb" }}>
+            <a className={clsx("text-white/25", "rotate-180")} style={{ writingMode: "tb" }}>
               Project
             </a>
           </li>
           <li data-aos="fade-right" data-aos-delay="500">
-            <a className={clsx("", "rotate-180")} style={{ writingMode: "tb" }}>
+            <a className={clsx("text-white/25", "rotate-180")} style={{ writingMode: "tb" }}>
               About
             </a>
           </li>
           <li data-aos="fade-right" data-aos-delay="600">
-            <a className={clsx("", "rotate-180")} style={{ writingMode: "tb" }}>
+            <a className={clsx("text-white/25", "rotate-180")} style={{ writingMode: "tb" }}>
               Contact
             </a>
           </li>
         </ul>
         <div className="mt-auto cursor-pointer ">
-          <div className="flex gap-x-2 items-center ">
+          <div className="flex gap-x-2 items-center">
             <i
               data-aos="fade-up"
               data-aos-delay="600"
-              className="fa-solid fa-file-arrow-down text-xl text-purple-300"
+              className="fa-solid fa-file-arrow-down text-xl"
             ></i>
             <span data-aos="fade-up" data-aos-delay="600" className="text-2xl">
               Resume

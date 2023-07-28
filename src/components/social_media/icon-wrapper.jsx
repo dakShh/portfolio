@@ -1,9 +1,11 @@
 import clsx from "clsx";
 import React from "react";
 
-const IconWrapper = ({ children, icon }) => {
+const IconWrapper = ({ children, icon, delay }) => {
   return (
     <div
+      data-aos="zoom-in-up"
+      data-aos-delay={delay ?? "200"}
       className={clsx(
         "p-3",
         "rounded-full shadow-md relative w-[50px] h-[50px] shadow-black/50",

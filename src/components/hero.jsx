@@ -20,15 +20,15 @@ const Hero = () => {
           )}
         >
           <div
-            data-aos="fade-up"
-            data-aos-delay="500"
+            data-aos="zoom-in-up"
+            data-aos-delay="800"
             className={clsx("relative", "font-thin", "text-4xl ", "text-white", "mb-2")}
           >
             DAKSH KHATRI
           </div>
           <div
-            data-aos="fade-up"
-            data-aos-delay="600"
+            data-aos="zoom-in-up"
+            data-aos-delay="950"
             className={clsx("relative", "text-7xl font-extrabold", "text-white", "max-w-lg")}
           >
             Full Stack Web Developer

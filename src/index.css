@@ -45,6 +45,11 @@ canvas {
   font-size: 24px;
 }
 
+#nav-ul li a:hover {
+  transition: 0.5s;
+  color: white;
+}
+
 /* @media (prefers-color-scheme: light) {
   :root {
     color: #213547;
