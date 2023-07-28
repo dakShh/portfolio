@@ -1,14 +1,13 @@
 // ** Components import
-import { useEffect } from "react";
 import Hero from "./components/hero";
+import About from "./components/about";
 import NavBar from "./components/navBar";
-import ParticleBackground from "./components/particleBackground";
 import Socials from "./components/social_media/socials";
+import ParticleBackground from "./components/particleBackground";
 
 // ** Animate on scroll
 import Aos from "aos";
 import "aos/dist/aos.css";
-import About from "./components/about";
 
 function App() {
   Aos.init({
