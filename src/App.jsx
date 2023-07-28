@@ -8,6 +8,8 @@ import ParticleBackground from "./components/particleBackground";
 // ** Animate on scroll
 import Aos from "aos";
 import "aos/dist/aos.css";
+import Skills from "./components/skills/skills";
+import Projects from "./components/projects/projects";
 
 function App() {
   Aos.init({
@@ -21,6 +23,8 @@ function App() {
       <Socials />
       <Hero />
       <About />
+      <Skills />
+      <Projects />
     </div>
   );
 }
