@@ -5,22 +5,23 @@ const MobileSideBar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   function toggleOpen() {
-    console.log("clicked");
     setIsOpen((prevState) => !prevState);
   }
   return (
     <div className={clsx("absolute", "left-[30px] top-[35px]")}>
       {!isOpen && (
-        <i
-          onClick={() => toggleOpen()}
-          className={clsx(
-            "fixed",
-            "text-white",
-            "fa-solid fa-bars-staggered",
-            "text-2xl",
-            "cursor-pointer"
-          )}
-        ></i>
+        <div>
+          <i
+            onClick={() => toggleOpen()}
+            className={clsx(
+              "fixed",
+              "text-white",
+              "fa-solid fa-bars-staggered",
+              "text-2xl",
+              "cursor-pointer"
+            )}
+          ></i>
+        </div>
       )}
 
       <div
@@ -32,8 +33,8 @@ const MobileSideBar = () => {
           "h-screen",
           "z-[999]",
           `${isOpen ? "opacity-[1]" : "opacity-[0]"}`,
-          "transition duration-150",
-          `${isOpen ? "translate-x-0" : "-translate-x-8"}`
+          "transition duration-500",
+          `${isOpen ? "translate-x-0" : "-translate-x-24"}`
         )}
       >
         <nav className={clsx("text-white ", "flex flex-col items-center ", "w-full h-full")}>
