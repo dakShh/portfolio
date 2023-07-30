@@ -22,14 +22,19 @@ const Hero = () => {
           <div
             data-aos="zoom-in-up"
             data-aos-delay="800"
-            className={clsx("relative", "font-thin", "text-4xl ", "text-white", "mb-2")}
+            className={clsx("relative", "font-thin", "text-2xl lg:text-4xl ", "text-white", "mb-2")}
           >
             DAKSH KHATRI
           </div>
           <div
             data-aos="zoom-in-up"
             data-aos-delay="950"
-            className={clsx("relative", "text-7xl font-extrabold", "text-white", "max-w-lg")}
+            className={clsx(
+              "relative",
+              "text-5xl lg:text-7xl font-extrabold",
+              "text-white",
+              "max-w-lg"
+            )}
           >
             Full Stack Web Developer
           </div>
