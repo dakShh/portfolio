@@ -10,7 +10,18 @@ const MobileSideBar = () => {
   return (
     <div className={clsx("absolute", "left-[30px] top-[35px]")}>
       {!isOpen && (
-        <div>
+        <div
+          data-aos="fade-right"
+          data-aos-delay="400"
+          data-aos-duration="1000"
+          className={clsx(
+            "fixed flex justify-center items-center",
+            "rounded-full aspect-square",
+            "w-14",
+            "bg-black/80 backdrop-blur-[2px] ",
+            "z-[888]"
+          )}
+        >
           <i
             onClick={() => toggleOpen()}
             className={clsx(
@@ -18,7 +29,8 @@ const MobileSideBar = () => {
               "text-white",
               "fa-solid fa-bars-staggered",
               "text-2xl",
-              "cursor-pointer"
+              "cursor-pointer",
+              "z-[999]"
             )}
           ></i>
         </div>
