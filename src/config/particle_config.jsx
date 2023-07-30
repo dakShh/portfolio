@@ -1,7 +1,7 @@
 const particle_config = {
   particles: {
     number: {
-      value: 150,
+      value: 50,
       density: {
         enable: true,
         value_area: 600,
@@ -26,8 +26,8 @@ const particle_config = {
       },
     },
     opacity: {
-      value: 0.5,
-      random: false,
+      value: 0.4,
+      random: true,
       anim: {
         enable: false,
         speed: 1,
@@ -36,7 +36,7 @@ const particle_config = {
       },
     },
     size: {
-      value: 2,
+      value: 8,
       random: true,
       anim: {
         enable: false,
@@ -54,8 +54,8 @@ const particle_config = {
     },
     move: {
       enable: true,
-      speed: 1,
-      direction: "none",
+      speed: 2,
+      direction: "top",
       random: true,
       straight: false,
       out_mode: "out",
@@ -71,7 +71,7 @@ const particle_config = {
     detect_on: "canvas",
     events: {
       onhover: {
-        enable: true,
+        enable: false,
         mode: "bubble",
       },
       onclick: {
@@ -106,7 +106,7 @@ const particle_config = {
       },
     },
   },
-  retina_detect: true,
+  retina_detect: false,
 };
 
 export default particle_config;

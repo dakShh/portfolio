@@ -37,11 +37,13 @@ function App() {
     <div className="min-h-screen relative overflow-hidden container mx-auto">
       <ParticleBackground />
       {isMobile ? <MobileSideBar /> : <NavBar />}
-      <Socials />
-      <Hero />
-      <About />
-      <Skills />
-      <Projects />
+      <div className="lg:pl-[100px] xl:pl-[100px]">
+        <Socials />
+        <Hero />
+        <About />
+        <Skills />
+        <Projects />
+      </div>
     </div>
   );
 }

@@ -20,7 +20,7 @@ const Projects = () => {
         </div>
       </div>
 
-      <div className={clsx("lg:max-w-3xl xl:max-w-5xl", "mx-auto", "lg:pl-16 xl:pl-0")}>
+      <div className={clsx("lg:max-w-3xl xl:max-w-5xl", "mx-auto", "lg:pl-4 xl:pl-0")}>
         <div className={clsx("grid md:grid-cols-2 gap-5 xl:gap-16 justify-center")}>
           {project_list.map((project, index) => (
             <ProjectCard

@@ -34,7 +34,10 @@
 
 canvas {
   display: block;
-  background: rgba(0, 0, 0, 0.45);
+  background: rgba(0, 0, 0, 0.9);
+  background: linear-gradient(76.8deg, rgb(36, 31, 98) 3.6%, rgb(121, 45, 129) 90.4%);
+
+  /* linear-gradient(76.8deg, rgb(121, 45, 129) 3.6%, rgb(36, 31, 98) 90.4%) */
   position: fixed;
   z-index: -1;
 }
