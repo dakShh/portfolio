@@ -10,11 +10,11 @@ const ProjectCard = ({ name, link, image, stack, delay }) => {
           "cursor-pointer hover:border-white/40 hover:bg-white/20"
         )}
       >
-        <div className="max-h-[300px] mb-2 overflow-hidden p-5">
+        <div className="h-[250px] md:h-[210px] lg:h-[160px] xl:max-h-[300px] mb-2 overflow-hidden p-3 xl:p-5">
           <img src={image} alt="" className="object-cover" />
         </div>
         <div className={clsx("p-2")}>
-          <div className={clsx("text-2xl font-bold", "text-center")}>{name}</div>
+          <div className={clsx("text-xl xl:text-2xl font-bold", "text-center")}>{name}</div>
         </div>
       </div>
     </a>
