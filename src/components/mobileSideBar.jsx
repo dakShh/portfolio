@@ -13,7 +13,13 @@ const MobileSideBar = () => {
       {!isOpen && (
         <i
           onClick={() => toggleOpen()}
-          className={clsx("text-white", "fa-solid fa-bars-staggered", "text-2xl", "cursor-pointer")}
+          className={clsx(
+            "fixed",
+            "text-white",
+            "fa-solid fa-bars-staggered",
+            "text-2xl",
+            "cursor-pointer"
+          )}
         ></i>
       )}
 

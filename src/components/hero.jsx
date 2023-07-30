@@ -7,18 +7,9 @@ const Hero = () => {
   // px-[420px] pt-[230px]
 
   return (
-    <div className={clsx("", "container mx-auto", "z-50")}>
+    <div className={clsx("px-3 md:px-0", "container mx-auto", "z-50")}>
       <div className={clsx("flex justify-center items-center", "min-h-screen")}>
-        <div
-          className={clsx(
-            "text-center"
-            // "mt-[-100px]",
-            // "bg-white/5",
-            // "border border-white/5 rounded-xl",
-            // "p-20",
-            // "backdrop-blur-[3px]"
-          )}
-        >
+        <div className={clsx("md:text-center")}>
           <div
             data-aos="zoom-in-up"
             data-aos-delay="800"
@@ -33,7 +24,7 @@ const Hero = () => {
               "relative",
               "text-5xl lg:text-7xl font-extrabold",
               "text-white",
-              "max-w-lg"
+              "max-w-[300px] md:max-w-lg"
             )}
           >
             Full Stack Web Developer
