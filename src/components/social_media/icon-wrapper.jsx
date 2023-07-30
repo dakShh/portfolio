@@ -28,7 +28,7 @@ const IconWrapper = ({ children, icon, delay, content, link }) => {
         <div
           className={clsx(
             "absolute right-[60px]",
-            `${isOpen ? "opacity-[1]" : "opacity-[0]"}`,
+            `${isOpen ? "opacity-[1]" : "invisible opacity-[0]"}`,
             "transition duration-500",
             `${isOpen ? "translate-x-0" : "translate-x-8"}`,
             "bg-white/20 backdrop-blur-[3px] rounded-lg px-2 py-1 font-bold ",
