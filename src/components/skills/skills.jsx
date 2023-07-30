@@ -7,8 +7,8 @@ import SkillCard from "./skillCard";
 
 const Skills = () => {
   return (
-    <div className="container mx-auto relative min-h-screen text-white">
-      <div className="text-center mt-52">
+    <div className="container mx-auto relative md:min-h-screen text-white">
+      <div className="text-center mt-24 md:mt-52">
         <div
           data-aos="zoom-in-up"
           data-aos-delay="300"

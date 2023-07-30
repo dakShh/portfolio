@@ -34,7 +34,7 @@ const About = () => {
           data-aos-delay="600"
           className={clsx(
             "text-3xl lg:text-5xl font-extrabold",
-            "max-w-[170px] md:max-w-7xl w-full",
+            "max-w-[170px] md:max-w-[9999px] w-full",
             "md:text-center",
             "underline underline-offset-4",
             "mb-10"
