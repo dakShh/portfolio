@@ -6,7 +6,7 @@ import ProjectCard from "./projectCard";
 const Projects = () => {
   return (
     <div className={clsx("container mx-auto relative text-white min-h-screen", "mb-24", "px-8")}>
-      <div className="text-center mt-24 xl:mt-52">
+      <div className="text-center mt-36  lg:mt-52">
         <div
           data-aos="zoom-in-up"
           data-aos-delay="300"
