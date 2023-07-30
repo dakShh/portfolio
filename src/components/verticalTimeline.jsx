@@ -95,7 +95,7 @@ const VerticalTimelineComponent = () => {
           boxShadow: "inherit",
         }}
         contentArrowStyle={{ borderRight: "10px solid  rgb(255, 255, 255)" }}
-        date="April 2021 - July 2023"
+        date="April 2017 - Oct 2020"
         dateClassName="ml-10 text-5xl"
         iconStyle={{
           background: "rgb(255, 255, 255)",
