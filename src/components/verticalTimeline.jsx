@@ -39,7 +39,7 @@ const VerticalTimelineComponent = () => {
         }}
         icon={<SchoolIcon />}
       >
-        <div className="border-2 border-white px-8 py-10 rounded-xl w-[300px] ml-auto">
+        <div className="border-2 border-white px-8 py-10 rounded-xl w-[300px] xl:ml-auto">
           <div className="vertical-timeline-element-title mb-5 font-bold text-xl">
             Centennial College
           </div>
@@ -106,7 +106,7 @@ const VerticalTimelineComponent = () => {
         }}
         icon={<SchoolIcon />}
       >
-        <div className="border-2 border-white px-8 py-10 rounded-xl w-[300px] ml-auto">
+        <div className="border-2 border-white px-8 py-10 rounded-xl w-[300px] xl:ml-auto">
           <div className="vertical-timeline-element-title mb-5 font-bold text-xl">
             S.K. Somaiya College
           </div>

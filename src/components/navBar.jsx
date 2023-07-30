@@ -9,8 +9,8 @@ const NavBar = () => {
       className={clsx(
         "px-4 py-14 lg:px-8 lg:py-14",
         "fixed left-0",
-        "bg-black/40",
-        "backdrop-blur-[2px]",
+        "bg-black/60",
+        "backdrop-blur-[3px]",
         "h-screen",
         "z-[999]",
         "hidden md:block"
