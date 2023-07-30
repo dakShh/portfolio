@@ -13,14 +13,24 @@ const SkillCard = ({ name, percent, image, delay }) => {
         // "border-2 border-white",
         "backdrop-blur-sm",
         "rounded-xl shadow-md relative shadow-black/25",
-        "bg-white rounded-xl p-4",
-        "text-xl"
+        "bg-white rounded-xl p-2 lg:p-4",
+        "overflow-hidden"
       )}
     >
-      <div className="text-black text-xs tracking-wider font-bold">{name}</div>
+      <div
+        className={clsx(
+          "text-black text-[10px] lg:text-xs tracking-wider font-bold",
+          "whitespace-nowrap"
+        )}
+      >
+        {name}
+      </div>
 
       <div>
-        <img src={image} className="aspect-square object-contain" />
+        <img
+          src={image}
+          className={clsx("aspect-square object-contain", "w-[45px] md:w-[70px] lg:w-full")}
+        />
       </div>
     </div>
   );

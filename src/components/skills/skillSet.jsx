@@ -90,13 +90,13 @@ const skillSet = [
     name: "PHOTOSHOP",
     delay: 1500,
     percent: 90,
-    image: pr,
+    image: ps,
   },
   {
     name: "PREMIERE PRO",
     delay: 1600,
     percent: 90,
-    image: ps,
+    image: pr,
   },
 ];
 export default skillSet;

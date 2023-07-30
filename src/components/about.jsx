@@ -42,7 +42,7 @@ const About = () => {
         >
           Education & Experience
         </div>
-        <div className="md:px-[170px] lg:px-0">
+        <div className="md:px-[170px] lg:px-[220px] xl:px-0">
           <VerticalTimeline />
         </div>
       </div>
