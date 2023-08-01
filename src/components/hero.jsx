@@ -1,13 +1,24 @@
-import React from "react";
+import React, { useEffect } from "react";
 
 // ** Third party imports
 import clsx from "clsx";
 
-const Hero = () => {
+import { useInView } from "react-intersection-observer";
+
+const Hero = ({ isInView }) => {
   // px-[420px] pt-[230px]
 
+  const { ref, inView, entry } = useInView({
+    /* Optional options */
+    threshold: 0,
+  });
+
+  useEffect(() => {
+    isInView(inView);
+  }, [inView]);
+
   return (
-    <div className={clsx("px-3 md:px-0", "container mx-auto", "z-50")}>
+    <div id="hero" className={clsx("px-3 md:px-0", "container mx-auto", "z-50")}>
       <div className={clsx("flex justify-center items-center", "min-h-screen")}>
         <div className={clsx("md:text-center")}>
           <div
@@ -18,6 +29,7 @@ const Hero = () => {
             DAKSH KHATRI
           </div>
           <div
+            ref={ref}
             data-aos="zoom-in-up"
             data-aos-delay="950"
             className={clsx(

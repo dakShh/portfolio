@@ -3,7 +3,10 @@ import React from "react";
 // ** Third party imports
 import clsx from "clsx";
 
-const NavBar = () => {
+const NavBar = ({ isInView }) => {
+  const handleClick = (id) => {
+    document.getElementById(`${id}`).scrollIntoView({ behavior: "smooth" });
+  };
   return (
     <div
       className={clsx(
@@ -24,34 +27,53 @@ const NavBar = () => {
         <ul className={clsx("flex flex-col gap-y-8", "")} id="nav-ul">
           <li data-aos="fade-right" data-aos-delay="200">
             <a
-              className={clsx("font-bold text-lg lg:text-2xl text-white", "rotate-180")}
+              onClick={() => handleClick("hero")}
+              className={clsx(
+                `${
+                  isInView === "home" ? "font-bold text-white text-2xl" : "text-lg text-white/25"
+                }`,
+                "rotate-180"
+              )}
               style={{ writingMode: "tb" }}
             >
               Home
             </a>
           </li>
-          <li data-aos="fade-right" data-aos-delay="400">
-            <a
-              className={clsx("text-lg", "text-white/25", "rotate-180")}
-              style={{ writingMode: "tb" }}
-            >
-              Project
-            </a>
-          </li>
           <li data-aos="fade-right" data-aos-delay="500">
             <a
-              className={clsx("text-lg", "text-white/25", "rotate-180")}
+              onClick={() => handleClick("about")}
+              className={clsx(
+                `${isInView === "about" ? "font-bold text-2xl" : "text-lg text-white/25"}`,
+                "rotate-180"
+              )}
               style={{ writingMode: "tb" }}
             >
               About
             </a>
           </li>
-          <li data-aos="fade-right" data-aos-delay="600">
+
+          <li data-aos="fade-right" data-aos-delay="400">
             <a
-              className={clsx("text-lg", "text-white/25", "rotate-180")}
+              onClick={() => handleClick("skills")}
+              className={clsx(
+                `${isInView === "skills" ? "font-bold text-2xl" : "text-lg text-white/25"}`,
+                "rotate-180"
+              )}
               style={{ writingMode: "tb" }}
             >
-              Contact
+              Skills
+            </a>
+          </li>
+          <li data-aos="fade-right" data-aos-delay="600">
+            <a
+              onClick={() => handleClick("projects")}
+              className={clsx(
+                `${isInView === "projects" ? "font-bold text-2xl" : "text-lg text-white/25"}`,
+                "rotate-180"
+              )}
+              style={{ writingMode: "tb" }}
+            >
+              Projects
             </a>
           </li>
         </ul>

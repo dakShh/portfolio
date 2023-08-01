@@ -1,13 +1,24 @@
 import clsx from "clsx";
-import React from "react";
+import React, { useEffect } from "react";
 import project_list from "./project_list";
 import ProjectCard from "./projectCard";
 
-const Projects = () => {
+import { useInView } from "react-intersection-observer";
+
+const Projects = ({ isInView }) => {
+  const { ref, inView, entry } = useInView({
+    /* Optional options */
+    threshold: 0,
+  });
+
+  useEffect(() => {
+    isInView(inView);
+  }, [inView]);
   return (
     <div className={clsx("container mx-auto relative text-white min-h-screen", "mb-24", "px-8")}>
-      <div className="text-center mt-36  lg:mt-52">
+      <div id="projects" className="text-center mt-36 pt-20 lg:mt-52">
         <div
+          ref={ref}
           data-aos="zoom-in-up"
           data-aos-delay="300"
           className={clsx(

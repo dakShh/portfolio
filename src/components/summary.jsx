@@ -1,10 +1,20 @@
 import clsx from "clsx";
-import React from "react";
+import React, { useEffect } from "react";
 import VerticalTimeline from "./verticalTimeline";
 
-const About = () => {
+import { useInView } from "react-intersection-observer";
+
+const Summary = ({ isInView }) => {
+  const { ref, inView, entry } = useInView({
+    /* Optional options */
+    threshold: 0,
+  });
+
+  useEffect(() => {
+    isInView(inView);
+  }, [inView]);
   return (
-    <div className="relative min-h-screen  text-white px-5">
+    <div id="about" className="pt-20 relative min-h-screen  text-white px-5">
       <div className="flex flex-col md:items-center mb-32 ">
         <div
           data-aos="zoom-in-up"
@@ -28,10 +38,10 @@ const About = () => {
         </p>
       </div>
 
-      <div data-aos="zoom-in" data-aos-delay="400" className="my-10">
+      <div className="my-10" ref={ref}>
         <div
           data-aos="zoom-in-up"
-          data-aos-delay="600"
+          data-aos-delay="400"
           className={clsx(
             "text-3xl lg:text-5xl font-extrabold",
             "max-w-[170px] md:max-w-[9999px] w-full",
@@ -42,7 +52,11 @@ const About = () => {
         >
           Education & Experience
         </div>
-        <div className="md:px-[170px] lg:px-[220px] xl:px-0">
+        <div
+          data-aos="zoom-in"
+          data-aos-delay="800"
+          className="md:px-[170px] lg:px-[220px] xl:px-0"
+        >
           <VerticalTimeline />
         </div>
       </div>
@@ -50,4 +64,4 @@ const About = () => {
   );
 };
 
-export default About;
+export default Summary;

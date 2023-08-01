@@ -1,15 +1,26 @@
-import React from "react";
+import React, { useEffect } from "react";
 
 import clsx from "clsx";
 
 import skillSet from "./skillSet";
 import SkillCard from "./skillCard";
 
-const Skills = () => {
+import { useInView } from "react-intersection-observer";
+
+const Skills = ({ isInView }) => {
+  const { ref, inView, entry } = useInView({
+    /* Optional options */
+    threshold: 0,
+  });
+
+  useEffect(() => {
+    isInView(inView);
+  }, [inView]);
   return (
     <div className="container mx-auto relative  text-white">
-      <div className="text-center mt-24 md:mt-52">
+      <div id="skills" className="text-center mt-24 md:mt-52 pt-20">
         <div
+          ref={ref}
           data-aos="zoom-in-up"
           data-aos-delay="300"
           className={clsx(

@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 
 // ** Components import
 import Hero from "./components/hero";
-import About from "./components/about";
+import Summary from "./components/summary";
 import NavBar from "./components/navBar";
 import Skills from "./components/skills/skills";
 import Projects from "./components/projects/projects";
@@ -33,16 +33,43 @@ function App() {
   }, []);
 
   const isMobile = width <= 768;
+
+  const [isInView, setIsInView] = useState("home");
+  console.log("isInView", isInView);
   return (
     <div className="min-h-screen relative overflow-hidden container mx-auto">
       <ParticleBackground />
-      {isMobile ? <MobileSideBar /> : <NavBar />}
+      {isMobile ? <MobileSideBar isInView={isInView} /> : <NavBar isInView={isInView} />}
       <div className="lg:pl-[100px] xl:pl-[100px]">
         <Socials />
-        <Hero />
-        <About />
-        <Skills />
-        <Projects />
+        <Hero
+          isInView={(state) => {
+            if (state) {
+              setIsInView("home");
+            }
+          }}
+        />
+        <Summary
+          isInView={(state) => {
+            if (state) {
+              setIsInView("about");
+            }
+          }}
+        />
+        <Skills
+          isInView={(state) => {
+            if (state) {
+              setIsInView("skills");
+            }
+          }}
+        />
+        <Projects
+          isInView={(state) => {
+            if (state) {
+              setIsInView("projects");
+            }
+          }}
+        />
       </div>
     </div>
   );
