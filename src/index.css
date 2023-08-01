@@ -19,10 +19,11 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%; */
-
+  /* background: linear-gradient(0deg, #434343 3.6%, #000 50%); */
   /* background: radial-gradient(circle at 10% 20%, rgb(109, 0, 125) 0%, rgb(131, 83, 241) 90.1%); */
-  /* background: radial-gradient(circle at 10% 20%, #63005e 0%, #0b8793 90.1%); */
-  background: radial-gradient(circle at 10% 20%, #aa076b 0%, #61045f 90.1%);
+  background: radial-gradient(circle at 10% 20%, #63005e 0%, #0b8793 90.1%);
+  /* background: radial-gradient(circle at 10% 20%, #434343 0%, #000 90%); */
+  /* background: radial-gradient(circle at 10% 20%, #aa076b 0%, #61045f 90.1%); */
 }
 
 canvas {
@@ -32,7 +33,17 @@ canvas {
 
   /* linear-gradient(76.8deg, rgb(121, 45, 129) 3.6%, rgb(36, 31, 98) 90.4%) */
   position: fixed;
-  z-index: -1;
+  z-index: -999;
+}
+
+button {
+  padding: 10px 20px;
+  background: transparent;
+  border: 2px solid white;
+  border-radius: 10px;
+  color: white;
+  font-weight: 600;
+  font-size: 20px;
 }
 
 #nav-ul li a {

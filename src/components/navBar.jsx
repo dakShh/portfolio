@@ -3,9 +3,13 @@ import React from "react";
 // ** Third party imports
 import clsx from "clsx";
 
-const NavBar = ({ isInView }) => {
+const NavBar = ({ isInView, toggleResume }) => {
   const handleClick = (id) => {
     document.getElementById(`${id}`).scrollIntoView({ behavior: "smooth" });
+  };
+
+  const handleResume = () => {
+    toggleResume();
   };
   return (
     <div
@@ -78,7 +82,10 @@ const NavBar = ({ isInView }) => {
           </li>
         </ul>
         <div className="mt-auto cursor-pointer ">
-          <div className="flex flex-col lg:flex-row gap-x-2 items-center">
+          <div
+            onClick={() => handleResume()}
+            className="flex flex-col lg:flex-row gap-x-2 items-center"
+          >
             <i
               data-aos="fade-up"
               data-aos-delay="600"

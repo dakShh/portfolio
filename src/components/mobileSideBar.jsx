@@ -1,11 +1,14 @@
 import clsx from "clsx";
 import React, { useState } from "react";
 
-const MobileSideBar = ({ isInView }) => {
+const MobileSideBar = ({ isInView, toggleResume }) => {
   const [isOpen, setIsOpen] = useState(false);
 
   function toggleOpen() {
     setIsOpen((prevState) => !prevState);
+  }
+  function handleResume() {
+    toggleResume();
   }
 
   const handleClick = (id) => {
@@ -119,7 +122,10 @@ const MobileSideBar = ({ isInView }) => {
             </li>
           </ul>
           <div className="mt-auto cursor-pointer ">
-            <div className="flex flex-col lg:flex-row gap-x-2 items-center">
+            <div
+              onClick={() => handleResume()}
+              className="flex flex-col lg:flex-row gap-x-2 items-center"
+            >
               <i
                 data-aos="fade-up"
                 data-aos-delay="600"
