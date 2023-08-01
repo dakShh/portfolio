@@ -38,7 +38,7 @@ function App() {
   const isMobile = width <= 768;
 
   const [isInView, setIsInView] = useState("home");
-  const [showResume, setShowResume] = useState(true);
+  const [showResume, setShowResume] = useState(false);
 
   function toggleResume() {
     setShowResume((prevState) => !prevState);
@@ -64,7 +64,7 @@ function App() {
           </>
 
           <div className="lg:pl-[100px] xl:pl-[100px]">
-            <Socials />
+            {/* <Socials /> */}
             <Hero isInView={(state) => handleInView(state, "home")} />
             <Summary isInView={(state) => handleInView(state, "about")} />
             <Skills isInView={(state) => handleInView(state, "skills")} />

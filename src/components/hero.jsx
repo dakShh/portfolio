@@ -4,6 +4,7 @@ import React, { useEffect } from "react";
 import clsx from "clsx";
 
 import { useInView } from "react-intersection-observer";
+import Socials from "./social_media/socials";
 
 const Hero = ({ isInView }) => {
   const { ref, inView, entry } = useInView({
@@ -16,6 +17,7 @@ const Hero = ({ isInView }) => {
 
   return (
     <div id="hero" className={clsx("px-3 md:px-0", "container mx-auto", "z-50")}>
+      <Socials />
       <div className={clsx("flex justify-center items-center", "min-h-screen")}>
         <div className={clsx("md:text-center")}>
           <div

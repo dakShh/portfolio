@@ -4,7 +4,12 @@ import IconWrapper from "./icon-wrapper";
 
 const Socials = () => {
   return (
-    <div className={clsx("fixed", "right-[30px] top-[35px] lg:right-[50px] lg:top-[50px]")}>
+    <div
+      className={clsx(
+        // "fixed",
+        "absolute right-[30px] top-[35px] lg:right-[50px] lg:top-[50px]"
+      )}
+    >
       <div className={clsx("flex flex-col gap-y-5")}>
         <IconWrapper
           delay={200}
