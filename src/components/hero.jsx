@@ -5,11 +5,10 @@ import clsx from "clsx";
 
 import { useInView } from "react-intersection-observer";
 
-const Hero = ({ isInView }) => {
-  // px-[420px] pt-[230px]
+import gif from "../assets/gifs/proud.svg";
 
+const Hero = ({ isInView }) => {
   const { ref, inView, entry } = useInView({
-    /* Optional options */
     threshold: 0,
   });
 
