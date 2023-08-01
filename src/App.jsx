@@ -35,7 +35,7 @@ function App() {
   const isMobile = width <= 768;
 
   const [isInView, setIsInView] = useState("home");
-  console.log("isInView", isInView);
+
   return (
     <div className="min-h-screen relative overflow-hidden container mx-auto">
       <ParticleBackground />
