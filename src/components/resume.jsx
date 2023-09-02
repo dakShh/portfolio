@@ -1,6 +1,6 @@
 import React from "react";
 
-import ResumeSrc from "../assets/resume/resume.png";
+import ResumeSrc from "../assets/resume/resume1.png";
 import clsx from "clsx";
 
 const Resume = ({ toggleResume }) => {
