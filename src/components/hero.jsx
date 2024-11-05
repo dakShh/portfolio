@@ -44,7 +44,7 @@ const Hero = ({ isInView }) => {
                             ''
                         )}
                     >
-                        Software engineer
+                        Software Engineer
                     </div>
                 </div>
             </div>

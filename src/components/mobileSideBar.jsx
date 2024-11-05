@@ -86,12 +86,12 @@ const MobileSideBar = ({ isInView, toggleResume }) => {
                                 Home
                             </a>
                         </li>
-                        <li data-aos="fade-right" data-aos-delay="400">
+                        <li data-aos="fade-right" data-aos-delay="600">
                             <a
-                                onClick={() => handleClick('about')}
+                                onClick={() => handleClick('projects')}
                                 className={clsx(
                                     `${
-                                        isInView === 'about'
+                                        isInView === 'projects'
                                             ? 'font-bold text-2xl'
                                             : 'text-lg text-white/25'
                                     }`,
@@ -99,7 +99,7 @@ const MobileSideBar = ({ isInView, toggleResume }) => {
                                 )}
                                 style={{ writingMode: 'tb' }}
                             >
-                                About
+                                Projects
                             </a>
                         </li>
                         <li data-aos="fade-right" data-aos-delay="500">
@@ -118,12 +118,12 @@ const MobileSideBar = ({ isInView, toggleResume }) => {
                                 Skills
                             </a>
                         </li>
-                        <li data-aos="fade-right" data-aos-delay="600">
+                        <li data-aos="fade-right" data-aos-delay="400">
                             <a
-                                onClick={() => handleClick('projects')}
+                                onClick={() => handleClick('about')}
                                 className={clsx(
                                     `${
-                                        isInView === 'projects'
+                                        isInView === 'about'
                                             ? 'font-bold text-2xl'
                                             : 'text-lg text-white/25'
                                     }`,
@@ -131,7 +131,7 @@ const MobileSideBar = ({ isInView, toggleResume }) => {
                                 )}
                                 style={{ writingMode: 'tb' }}
                             >
-                                Projects
+                                About
                             </a>
                         </li>
                     </ul>

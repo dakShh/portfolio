@@ -45,31 +45,6 @@ const NavBar = ({ isInView, toggleResume }) => {
                             Home
                         </a>
                     </li>
-                    <li data-aos="fade-right" data-aos-delay="500">
-                        <a
-                            onClick={() => handleClick('about')}
-                            className={clsx(
-                                `${isInView === 'about' ? 'font-bold text-2xl' : 'text-lg text-white/25'}`,
-                                'rotate-180'
-                            )}
-                            style={{ writingMode: 'tb' }}
-                        >
-                            About
-                        </a>
-                    </li>
-
-                    <li data-aos="fade-right" data-aos-delay="400">
-                        <a
-                            onClick={() => handleClick('skills')}
-                            className={clsx(
-                                `${isInView === 'skills' ? 'font-bold text-2xl' : 'text-lg text-white/25'}`,
-                                'rotate-180'
-                            )}
-                            style={{ writingMode: 'tb' }}
-                        >
-                            Skills
-                        </a>
-                    </li>
                     <li data-aos="fade-right" data-aos-delay="600">
                         <a
                             onClick={() => handleClick('projects')}
@@ -82,6 +57,30 @@ const NavBar = ({ isInView, toggleResume }) => {
                             style={{ writingMode: 'tb' }}
                         >
                             Projects
+                        </a>
+                    </li>
+                    <li data-aos="fade-right" data-aos-delay="400">
+                        <a
+                            onClick={() => handleClick('skills')}
+                            className={clsx(
+                                `${isInView === 'skills' ? 'font-bold text-2xl' : 'text-lg text-white/25'}`,
+                                'rotate-180'
+                            )}
+                            style={{ writingMode: 'tb' }}
+                        >
+                            Skills
+                        </a>
+                    </li>
+                    <li data-aos="fade-right" data-aos-delay="500">
+                        <a
+                            onClick={() => handleClick('about')}
+                            className={clsx(
+                                `${isInView === 'about' ? 'font-bold text-2xl' : 'text-lg text-white/25'}`,
+                                'rotate-180'
+                            )}
+                            style={{ writingMode: 'tb' }}
+                        >
+                            About
                         </a>
                     </li>
                 </ul>

@@ -65,9 +65,9 @@ function App() {
 
                 <div className="lg:pl-[100px] xl:pl-[100px]">
                     <Hero isInView={(state) => handleInView(state, 'home')} />
-                    <Summary isInView={(state) => handleInView(state, 'about')} />
-                    <Skills isInView={(state) => handleInView(state, 'skills')} />
                     <Projects isInView={(state) => handleInView(state, 'projects')} />
+                    <Skills isInView={(state) => handleInView(state, 'skills')} />
+                    <Summary isInView={(state) => handleInView(state, 'about')} />
                 </div>
             </div>
             {/*  )} */}
